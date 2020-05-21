@@ -1,4 +1,3 @@
-import { NameData } from '../types/name'
 import { ActionTypes } from './types'
 
 export interface NamesData {
@@ -16,6 +15,11 @@ export interface setCurrentNameAction {
   name: string
 }
 
+export interface deleteNameAction {
+  type: ActionTypes.DELETE_NAME,
+  name: string
+}
+
 export const addName = (name: string) => {
   return {
     type: ActionTypes.ADD_NAME,
@@ -30,4 +34,11 @@ export const setCurrentName = (name: string) => {
   }
 }
 
-export type NamesActions = addNameAction | setCurrentNameAction
+export const deleteName = (name: string) => {
+  return {
+    type: ActionTypes.DELETE_NAME,
+    name
+  }
+}
+
+export type NamesActions = addNameAction | setCurrentNameAction | deleteNameAction;
