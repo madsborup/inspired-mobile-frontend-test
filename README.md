@@ -2,8 +2,6 @@
 
 ## Usage
 
-Add root run:
-
 ```js
 npm install
 npm start
