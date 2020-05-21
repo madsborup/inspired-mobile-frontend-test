@@ -1,11 +1,12 @@
 import React from 'react'
-import NameList from './views/NameList'
+import AppViewWrapper from './components/AppviewWrapper'
+import NamePicker from './views/NamePicker'
 
 const App = () => {
   return (
-    <div>
-      <NameList />
-    </div>
+    <AppViewWrapper>
+      <NamePicker />
+    </AppViewWrapper>
   )
 }
 
