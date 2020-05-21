@@ -49,9 +49,9 @@ const NamePicker: React.FC<Props> = ({ names, currentName, addName, setCurrentNa
       ></Input>
       <Button onClick={onAddName} primary>Add Name</Button>
       <NameList names={names} />
-      <Button onClick={onSelectRandomName} primary>Select a random name</Button>
+      <Button onClick={onSelectRandomName} primary>Pick a random name</Button>
       <Input
-        label="Selected name"
+        label="Picked name"
         value={currentName}
         name="currentName"
         disabled
